@@ -1,0 +1,157 @@
+@font-face {
+  font-family: poggers;
+  src: url(../fonts/Mercury_SB_Regular.otf);
+}
+
+.header { /* Headern */
+  height: 50px;
+  position: fixed; /* Fäst headern så att den följer med när du scrollar */
+  top: 0;
+  background: #00030d;
+  width: 100%;
+  z-index:1004;
+}
+  
+.hText { /* Texten som visas i headern */
+  text-decoration: none !important;
+  color: #fff;
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  font-family: "poggers";
+}
+  
+.hContent { /* "wrapper" för header */
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 40px;
+  z-index:1002; /* z-index används för att anpassa föremålets lager, om den ska ligga under eller över andra föremål */
+}
+
+.navbar-toggle {
+  position: relative;
+  width: 25px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 0;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+  background: #ecc781;
+}
+
+.navbar-toggle span:nth-child(1) {
+  top: 0px;
+}
+
+.navbar-toggle span:nth-child(2), .navbar-toggle span:nth-child(3) {
+  top: 8px;
+}
+
+.navbar-toggle span:nth-child(4) {
+  top: 16px;
+}
+
+.navbar-toggle.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.navbar-toggle.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.navbar-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggle.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.center-image {
+  width: 94px;
+  transition: .5s;
+}
+
+.center-image:hover {
+  width: 100px;
+}
+
+@media only screen and (max-width: 1662px) {
+  .hText {
+    display: none !important;
+  }
+  #demo {
+    display: none;
+  }
+  .jumbotron {
+    margin-top: 50px;
+  }
+}
+
+/*Burger meny*/
+#menu-mobile {
+  position: fixed;
+  display: none;
+  top: 50px;
+  background-color: #00030d;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+}
+.menu {
+  color: #ecc781;
+  padding: 3rem;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  z-index: 1001;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.basket-cart {
+  font-size: 23px;
+  transition: .2s ease !important;
+}
+
+.basket-cart:hover {
+  color: #e8808c;
+}
+
+/* Överskrid bootstrap */
+
+.navbar-toggle {
+  display: unset !important;
+  margin-top: unset !important;
+  margin-right: unset !important;
+  margin-left: 109.483px !important;
+  margin-bottom: unset !important;
+}
+
+.badge {
+  background: #262626 !important;
+  border-radius: 50px !important;
+  position: absolute;
+  right: 35px !important;
+  font-size: 10px !important;
+  top: 15px !important;
+}

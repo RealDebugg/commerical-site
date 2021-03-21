@@ -1,0 +1,117 @@
+@font-face {
+  font-family: KEKL;
+  src: url(../fonts/Decimal-Medium.woff2);
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body {
+  background: #121212 !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.carousel-inner img {
+  position: absolute;
+  top: -300px;
+}
+
+.carousel-inner img .extraImg {
+  position: absolute;
+  top: unset;
+}
+
+.carousel-item {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+.carousel-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "poggers";
+  font-size: 26px;
+  line-height: 108%;
+  letter-spacing: -.02em;
+  font-variant: small-caps;
+  font-weight: 400;
+}
+
+.h1small {
+  font-family: "poggers";
+  font-size: 26px;
+  line-height: 108%;
+  letter-spacing: -.02em;
+  font-variant: small-caps;
+  font-weight: 400;
+}
+
+.jumbo-p {
+  font-family: "KEKL";
+  line-height: 132%;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.jumbo-down {
+  font-size: 25px;
+  color: #ecc781;
+  transition: .2s ease !important;
+}
+
+.jumbo-down:hover {
+  color: #e8808c;
+}
+
+.gridContainer {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.specialcol {
+  background: #151515;
+  text-align: center;
+  color: white;
+  transition: .2s;
+}
+
+.specialcol:hover {
+  background: #ffffff08;
+}
+/* Överskrid bootstrap */
+
+.jumbotron {
+  border-radius: unset !important;
+  background-color: #151515 !important;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem !important;
+}
+
+.container {
+  max-width: unset !important;
+  padding-left: unset !important;
+  padding-right: unset !important;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-right: unset !important;
+  padding-left: unset !important;
+}
