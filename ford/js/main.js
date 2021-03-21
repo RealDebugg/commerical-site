@@ -5,6 +5,7 @@ $(document).on("dragstart", function(e) {
   }
 });
 
+//Animation för navigations menyn
 $(document).ready( function() {
   $('[data-toggle="navvers"]').click( function() {
     $(this).toggleClass('open');
@@ -14,4 +15,5 @@ $(document).ready( function() {
       $("#menu-mobile").fadeOut();
     }
   });
+  $('[data-toggle="tooltip"]').tooltip();  
 });
