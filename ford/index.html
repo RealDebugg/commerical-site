@@ -45,6 +45,7 @@
 				</div>
 			</div>
 			<div id="menu-mobile" class="navvers" >
+				<img src="img/logo.svg" style="position: absolute;top: 31%;left: 78%;transform: translate(-50%);">
   				<nav class="menu">
     				My Menu
 					<div class="left-menu">
@@ -96,9 +97,28 @@
 				<div class="col-sm-3"><img src="img/grid/4.png"><img src="img/grid/5.jpg"></div>
 			</div>
 			<div class="row gridContainer center" id="btm-gall">
-				<div class="col-sm-4 specialcol" data-toggle="tooltip" title="2016 Ford Explorer: Click for more details."><img src="img/purchaseable/c1.png"><p class="jumbo-p">Explorer</p></div>
+				<div class="col-sm-4 specialcol" data-toggle="tooltip" title="2016 Ford Explorer: Click for more details."><img data-toggle="modal" data-target="#myModal" src="img/purchaseable/c1.png"><p class="jumbo-p">Explorer</p></div>
 				<div class="col-sm-4 specialcol" data-toggle="tooltip" title="2019 Ford Mustang: Click for more details."><img src="img/purchaseable/c2.png"><p class="jumbo-p">Mustang</p></div>
 				<div class="col-sm-4 specialcol" data-toggle="tooltip" title="2021 Ford Focus ST: Click for more details."><img src="img/purchaseable/c3.png"><p class="jumbo-p">Focus ST</p></div>
+			</div>
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+				
+				  	<!-- Modal content-->
+				  	<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title h1small">Modal Header</h4>
+					  		<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+					  		<p>Some text in the modal.</p>
+						</div>
+						<div class="modal-footer">
+					  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+				  	</div>
+				  
+				</div>
 			</div>
 		</section>
 

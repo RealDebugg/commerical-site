@@ -7,7 +7,7 @@
   height: 50px;
   position: fixed; /* Fäst headern så att den följer med när du scrollar */
   top: 0;
-  background: #00030d;
+  background: #121212;
   width: 100%;
   z-index:1004;
 }
@@ -111,7 +111,7 @@
   position: fixed;
   display: none;
   top: 50px;
-  background-color: #00030d;
+  background-color: #121212;
   left: 0;
   height: 100vh;
   width: 100vw;
