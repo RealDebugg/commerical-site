@@ -115,3 +115,23 @@ body {
   padding-right: unset !important;
   padding-left: unset !important;
 }
+
+.row-car {
+	margin-right: unset;
+	margin-left: unset;
+	max-height: calc(91vh - 44px);
+}
+
+.text-side {
+	max-height: inherit;
+	overflow-y: scroll;
+}
+
+@media only screen and (min-width: 575px) and (max-width: 576px) {
+  .text-side {
+    overflow-y: unset !important;
+  }
+  .row-car {
+    overflow-y: scroll;
+  }
+}
